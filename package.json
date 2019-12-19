@@ -1,7 +1,7 @@
 {
 	"name": "svil-new-explorer-ext",
-	"displayName": "svil-new-explorer-ext",
-	"description": "Allows new folders to be created from the touch bar instead of selecting a top level folder and clicking the new folder icon. Increase productivity",
+	"displayName": "SVIL New Explorer Ext",
+	"description": "Allows new files and folders to be created from the touch bar instead of selecting a top level folder and clicking the new folder icon. An attempt to Increase productivity",
 	"version": "0.0.1",
 	"engines": {
 		"vscode": "^1.41.0"
