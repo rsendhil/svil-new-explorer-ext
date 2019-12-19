@@ -1,0 +1,57 @@
+{
+	"name": "svil-new-explorer-ext",
+	"displayName": "svil-new-explorer-ext",
+	"description": "Allows new folders to be created from the touch bar instead of selecting a top level folder and clicking the new folder icon. Increase productivity",
+	"version": "0.0.1",
+	"engines": {
+		"vscode": "^1.41.0"
+	},
+	"categories": [
+		"Other"
+	],
+	"activationEvents": [
+		"onCommand:extension.svilnewfileext",
+		"onCommand:extension.svilnewfolderext"
+	],
+	"main": "./extension.js",
+	"contributes": {
+		"commands": [
+			{
+				"command": "extension.svilnewfileext",
+				"title": "New File",
+				"icon": "./assets/newfile.png"
+			},
+			{
+				"command": "extension.svilnewfolderext",
+				"title": "New Folder",
+				"icon": "./assets/newfolder.png"
+			}
+		],
+		"menus": {
+			"touchBar": [
+				{
+					"command": "extension.svilnewfileext",
+					"group": "editing"
+				},
+				{
+					"command": "extension.svilnewfolderext",
+					"group": "editing"
+				}
+			]
+		}
+	},
+	"scripts": {
+		"test": "node ./test/runTest.js"
+	},
+	"devDependencies": {
+		"@types/glob": "^7.1.1",
+		"@types/mocha": "^5.2.7",
+		"@types/node": "^12.11.7",
+		"@types/vscode": "^1.41.0",
+		"eslint": "^6.6.0",
+		"glob": "^7.1.5",
+		"mocha": "^6.2.2",
+		"typescript": "^3.6.4",
+		"vscode-test": "^1.2.2"
+	}
+}
